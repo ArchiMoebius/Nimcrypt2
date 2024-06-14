@@ -1,0 +1,7 @@
+function nimcrypt2() {
+  NF=$1
+  DIR=`dirname $NF`
+  FN=`basename $NF | cut -f1 -d'.'`
+
+  docker run --rm -it -v $DIR:/pack nimcrypt2 -f /pack/$NF -o /pack/${FN}_packed.exe ${@:2}
+}
