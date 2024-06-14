@@ -1,0 +1,3 @@
+[submodule "nim-strenc"]
+	path = nim-strenc
+	url = git@github.com:ArchiMoebius/nim-strenc.git
