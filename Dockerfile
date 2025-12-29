@@ -1,4 +1,4 @@
-FROM nimlang/nim:2.0.8-regular AS builder
+FROM nimlang/nim:2.2.4-ubuntu-regular AS builder
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
